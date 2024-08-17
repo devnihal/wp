@@ -15,9 +15,9 @@
 .navbar{
     width: 100vw;
     height:fit-content;
-    padding: 5px;
+    padding: 5px 15px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 .links{
@@ -64,4 +64,19 @@
     border: 3px solid white;
     color: white;
     border-radius: 10px;
+    transition-duration: 350ms;
+    transition-timing-function: ease-in-out;
+    cursor: pointer;
+}
+.btn:hover{
+    letter-spacing: 5px;
+}
+.rt{
+    color: red;
+}
+.lnkbtn{
+    background-color: white;
+    color: red;
+    padding: 5px 10px;
+    border-radius: 5px;
 }
