@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*recalculate box model*/
+    font-family: sans-serif;
+}
+:root{
+    --theme-color:#c5380b;
+    --secondary:#efc4be;
+}
+section{
+    width: 100vw;
+    height: 100vh;
+}
+.wf{
+    color: white;
+}
+.tf{
+    color: var(--theme-color);
+}
+.nu{
+    text-decoration: none;
+}
+.home{
+    background-image: url(../assets/bg.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: #2e2e2e;
+    background-blend-mode: overlay;
+}
+.navbar{
+    width: 100vw;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 20px;
+}
+.logobox{
+    display: flex;
+    align-items: center;
+}
+.logo{
+    height: 70px;
+    filter: invert(100%);
+}
+.logotext{
+    font-size: 25px;
+    text-transform: uppercase;
+    transform: translateX(-30px);
+    font-weight: 600;
+}
+.navlinks{
+    font-size: 18px;
+    text-decoration: none;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(90deg,var(--theme-color),var(--secondary));
+    background-size: 0% 2px;
+    scale: 1;
+    background-position: bottom left;
+    transition: 0.25s linear;
+}
+.navlinks:hover{
+    background-size: 100% 2px;
+    scale: 1.25;
+}
+.links{
+    display: flex;
+    gap: 20px;
+}
+.loginbtn{
+    background-color: white;
+    padding: 5px 10px;
+    border-radius: 8px;
+    scale: 1.25;
+    transition: 0.35s cubic-bezier(0.04, 1.48, 0.91, 1.54);
+}
+.loginbtn:hover{
+    scale: 1.5;
+}
+.active-link{
+    background: none;
+    opacity: 50%;
+}
+.active-link:hover{
+    scale: 1;
+}
+.content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.mainhead{
+    width: max-content;
+    font-size: 50px;
+    text-transform: uppercase;
+}
+.fnc{
+    background-image: linear-gradient(90deg,var(--theme-color),var(--secondary));
+    background-size: 100% 3px;
+    background-repeat: no-repeat;
+    background-position: bottom left;
+}
+.subhead{
+    font-size: 35px;
+    color: var(--secondary);
+}
+.btns{
+    padding: 10px 15px;
+    border-radius: 30px;
+    font-size: 20px;
+    border: 3px solid var(--theme-color);
+    background-color: transparent;
+    cursor: pointer;
+    transition: 0.25s linear;
+}
+.btns:hover{
+    letter-spacing: 5px;
+}
