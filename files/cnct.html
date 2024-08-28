@@ -3,23 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bharath Airways | Home</title>
+    <title>Bharath Airways | Contact</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <section class="home">
         <div class="navbar">
-            <div class="logobox">
+            <a href="../index.html" class="logobox fade nu" style="--i:1;">
                 <img src="../assets/logo.png" alt="logo" class="logo">
                 <span class="logotext wf">Bharath <span class="tf">Air</span>ways</span>
-            </div>
+            </a>
             <nav class="links">
-                <a href="../index.html" class="navlinks wf">Home</a>
-                <a href="./about.html" class="navlinks wf">About Us</a>
-                <a href="./tickets.html" class="navlinks wf">Tickets</a>
-                <a href="#" class="navlinks wf active-link">Contact Us</a>
+                <a href="../index.html" class="navlinks wf fade" style="--i:2;">Home</a>
+                <a href="./about.html" class="navlinks wf fade" style="--i:3;">About Us</a>
+                <a href="./tickets.html" class="navlinks wf fade" style="--i:4;">Tickets</a>
+                <a href="#" class="navlinks wf active-link fade" style="--i:5;">Contact Us</a>
             </nav>
-            <a href="./login.html" class="nu wf loginbtn tf">Login</a>
+            <a href="./login.html" class="nu wf loginbtn tf fade" style="--i:6;">Login</a>
+        </div>
+        <div class="content">
+            <div class="contcont" style="--i:7;">
+                <div class="addr">
+                    <h1 class="mainhead">Reach <span class="tf">Us</span> </h1>
+                    <address>
+                        <span class="slidein" style="--i:11;"><b>email:</b>someone@somewhere.com</span> <br><br>
+                        <span class="slidein" style="--i:11.5;"><b>phone:</b>+91 88XXX19X45 </span><br><br>
+                        <span class="slidein" style="--i:12;"><b>address:</b></span> <br> &nbsp;&nbsp;&nbsp; <span class="slidein" style="--i:12.5;">2nd floor,econ tower,</span> <br> &nbsp;&nbsp;&nbsp; <span class="slidein" style="--i:13;">93 street, </span><br> &nbsp;&nbsp;&nbsp; <span class="slidein" style="--i:13.5;">New Delhi, India</span> <br><br>
+                        <span class="slidein" style="--i:14;"><b>Social medias:</b> </span><br> &nbsp;&nbsp;&nbsp;<span class="slidein" style="--i:14.5;"><span class="insta">instagram.com</span>/bharathairways_official</span> <br>&nbsp;&nbsp;&nbsp;<span class="slidein" style="--i:15;"><span class="facebook">facebook.com</span>/bharathairways</span> <br>&nbsp;&nbsp;&nbsp;<span class="slidein" style="--i:15.5;"><b>x.com</b>/bharathairways</span>
+                    </address>
+                </div>
+                <div class="feedback">
+                    <h1 class="wf mainhead slidein">Feedback</h1>
+                    <form action="" class="fdbkform">
+                        <input class="fdbkinput slidein" type="text" placeholder="Joe Steph" style="--i:12;" required>
+                        <input class="fdbkinput slidein" type="email" placeholder="you@somehwere.com" style="--i:13;" required>
+                        <input class="fdbkinput slidein" type="tel" name="" id="" placeholder="+91 889XXXX145" style="--i:14;" required>
+                        <textarea class="fdbkinput slidein" name="" id="" placeholder="message" cols="5" style="--i:15;"></textarea>
+                        <button type="submit" class="bookbtn slidein" style="--i:16;">Submit</button>
+                    </form>
+                </div>
+            </div>
         </div>
     </section>
 </body>

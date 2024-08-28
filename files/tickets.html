@@ -9,17 +9,62 @@
 <body>
     <section class="home">
         <div class="navbar">
-            <div class="logobox">
+            <a href="../index.html" class="logobox fade nu" style="--i:1;">
                 <img src="../assets/logo.png" alt="logo" class="logo">
                 <span class="logotext wf">Bharath <span class="tf">Air</span>ways</span>
-            </div>
+            </a>
             <nav class="links">
-                <a href="../index.html" class="navlinks wf">Home</a>
-                <a href="./about.html" class="navlinks wf">About Us</a>
-                <a href="#" class="navlinks wf active-link">Tickets</a>
-                <a href="./cnct.html" class="navlinks wf">Contact Us</a>
+                <a href="../index.html" class="navlinks wf fade" style="--i:2;">Home</a>
+                <a href="./about.html" class="navlinks wf fade" style="--i:3;">About Us</a>
+                <a href="#" class="navlinks wf active-link fade" style="--i:4;">Tickets</a>
+                <a href="./cnct.html" class="navlinks wf fade" style="--i:5;">Contact Us</a>
             </nav>
-            <a href="./login.html" class="nu wf loginbtn tf">Login</a>
+            <a href="./login.html" class="nu wf loginbtn tf fade" style="--i:6;">Login</a>
+        </div>
+        <div class="body2">
+            <table class="schedule wf fade" style="--i:6">
+                <tr class="fade" style="--i:7;">
+                    <th>Route</th>
+                    <th>Time</th>
+                    <th>Status</th>
+                </tr>
+                <tr class="fade" style="--i:8;">
+                    <td>145 &rarr; 456</td>
+                    <td>17:30</td>
+                    <td>On Time</td>
+                </tr>
+                <tr class="fade" style="--i:9;">
+                    <td>125 &rarr; 000</td>
+                    <td>18:45</td>
+                    <td>On Time</td>
+                </tr>
+                <tr class="fade" style="--i:10;">
+                    <td>169 &rarr; 178</td>
+                    <td>21:30</td>
+                    <td>On Time</td>
+                </tr>
+                <tr class="fade" style="--i:11;">
+                    <td>156 &rarr; 147</td>
+                    <td>22:15</td>
+                    <td>On Time</td>
+                </tr>
+            </table>
+            <form action="" class="tcktform">
+                <h1 class="wf mainhead fade" style="width:100%;--i:12">Book Your Seats <span class="tf">Now</span> </h1>
+                <div class="formcont">
+                    <select class="tktinput fade" style="--i:13;" name="" id="">
+                        <option>--select Route--</option>
+                        <option>145 &rarr; 456</option>
+                        <option>125 &rarr; 000</option>
+                        <option>169 &rarr; 178</option>
+                        <option>156 &rarr; 147</option>
+                    </select>
+                    <!-- <span class="wf cross"> &times; </span> -->
+                    <input style="--i:14;" placeholder="people" step="1" class="tktinput fade" type="number" name="" id="" min="0" max="100" required>
+                </div>
+                <br>
+                <button style="--i:15;" type="submit" class="bookbtn fade">Book</button>
+            </form>
         </div>
     </section>
 </body>
